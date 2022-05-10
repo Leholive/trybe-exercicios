@@ -1,0 +1,41 @@
+div:hover{
+    border: 8px solid black;
+    }
+    div:nth-of-type(1) {
+    background-color: rgb(4, 4, 187);
+    }
+    div:nth-of-type(2){
+    background-color: rgb(79, 16, 79);
+    }
+    div:nth-of-type(3){
+    background-color: orange;
+    height: 80px;
+    }
+    div:nth-of-type(4){
+    background-color: rgb(78, 6, 6);
+    }
+    div:nth-of-type(5){
+    background-color: pink;
+    }
+
+    div:nth-of-type(1) > h3 {
+        color: white;
+        font-style: italic
+    }
+    div:nth-of-type(2) > h3 {
+        font-family:'Lucida Sans';
+        color: rgb(51, 229, 107)
+    }
+    div:nth-of-type(3) > h3 {
+        font-size: 50px;
+        color: deeppink;
+        font-style: italic
+    }
+    div:nth-of-type(4) > h3 {
+        font-family: Helvetica;
+        color: aqua;
+    }
+    div:nth-of-type(5) > h3 {
+        color: blueviolet;
+        font-style: italic
+    }
