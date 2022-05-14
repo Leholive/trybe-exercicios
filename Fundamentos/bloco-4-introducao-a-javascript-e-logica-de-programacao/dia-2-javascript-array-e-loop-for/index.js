@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 //1. Nesse primeiro exercício, percorra o array imprimindo todos os valores nele contidos com a função console.log();
 
@@ -67,10 +67,20 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
    //7.Utilizando for, descubra qual o menor valor contido no array e imprima-o;
 
-   let menorValor = numbers[0];
-   for(let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] < menorValor) {
-        menorValor = numbers[index];
-    }
-       } 
-       console.log(menorValor);
+   //let menorValor = numbers[0];
+   //for(let index = 0; index < numbers.length; index += 1) {
+   // if (numbers[index] < menorValor) {
+   //     menorValor = numbers[index];
+    //}
+   //    } 
+   //    console.log(menorValor);
+
+  // 8.Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
+
+  let criaArray = [];
+
+  for(let index = 0; index <= 25; index += 1){
+    criaArray.push (index);
+  }
+  console.log(criaArray)
+
