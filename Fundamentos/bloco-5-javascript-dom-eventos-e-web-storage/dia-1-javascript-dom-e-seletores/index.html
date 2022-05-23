@@ -45,6 +45,7 @@
        document.getElementsByTagName("p");
        let mudPara = document.getElementsByTagName("p")[1];
        mudPara.innerText = "Estarei trabalhando como DEV";
+       mudPara.innerHTML = mudPara.innerHTML.toUpperCase();
 
        document.getElementsByClassName("main-content");
        let main = document.getElementsByClassName("main-content")[0];
@@ -56,8 +57,7 @@
        
        document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript";
 
-       
-
+      
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
