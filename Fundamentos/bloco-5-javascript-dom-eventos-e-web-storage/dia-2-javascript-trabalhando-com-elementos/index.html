@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const bodyE = document.body;
+      const titulo = document.createElement("h1");
+      titulo.innerText = "Exercício 5.2 - JavaScript DOM";
+      bodyE.appendChild(titulo);
+
+      const bloco = document.createElement("main");
+      bloco.className = "main-content";
+      bodyE.appendChild(bloco);
+
+      const parte = document.createElement("section");
+      parte.className = "center-content";
+      bloco.appendChild(parte);
+
+      const text = document.createElement("p");
+      text.innerText = "Aprendendo a lidar com DOM dentro do JS";
+      parte.appendChild(text);
+
+      const blocoL = document.createElement("section");
+      blocoL.className = "left-conten";
+      bloco.appendChild(blocoL);
+
+      const blocoR = document.createElement("section");
+      blocoR.className = "right-content";
+      bloco.appendChild(blocoR);
+
+      const imagem = document.createElement("img");
+      imagem.src = "https://picsum.photos/200";
+      imagem.className = "small-image";
+      blocoL.appendChild(imagem);
+
+      const lista = document.createElement("ul");
+      blocoR.appendChild(lista);
+      
+      let array = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+
+      for(let index of array){
+          let itensLista = document.createElement("li");
+          itensLista.innerText = index;
+          lista.appendChild(itensLista);
+      }
+      
+
+
+
+    </script>
+  </body>
+</html>
