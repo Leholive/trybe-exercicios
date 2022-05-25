@@ -96,8 +96,13 @@
           let itensLista = document.createElement("li");
           itensLista.innerText = index;
           lista.appendChild(itensLista);
-      }
-      
+        }
+
+        for(let index = 1; index <= 3; index += 1){
+            const criaH3 = document.createElement("h3");
+            criaH3.innerText = "Show " + index;
+            bloco.appendChild(criaH3);
+        }
 
 
 
