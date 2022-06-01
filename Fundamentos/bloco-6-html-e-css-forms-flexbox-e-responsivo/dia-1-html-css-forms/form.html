@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <h1>Formulário de viagem!</h1>
+   <main>
+      <form action="">
+         <section>
+            <label for="name">Nome Completo:
+               <input type="text" name="nome" id="name">
+            </label><br><br>
+            <label for="e-mail">E-mail:
+               <input type="email" name="e-mail" id="e-mail">
+            </label>
+            <br><br>
+            <label for="op-1"></label>
+            <input type="radio" name="option" id="op-1">Cidade
+            </label>
+            <label for="op-2"></label>
+            <input type="radio" name="option" id="op-2">Campo
+            </label>
+            <label for="op-3"></label>
+            <input type="radio" name="option" id="op-3">Praia
+            </label>
+            <label for="op-4"></label>
+            <input type="radio" name="option" id="op-4">Montanhas
+            </label>
+            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+            <textarea name="box" id="textarea-1" cols="30" rows="6"></textarea>
+            <br>
+            <p>Qual a melhor data para realizar sua viagem?</p>
+            <label for="melhorData">Data:
+               <input type="data" name="data" id="melhorData" placeholder="dd/mm/aaaa">
+            </label>
+            <br>
+            <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+            <label for="sim">
+               <input type="checkbox" name="acept" id="sim">Sim, gostaria!
+            </label>
+            <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
+            <label for="yes">
+               <input type="checkbox" name="termo" id="yes">Concordo
+            </label>
+         </section>
+         <br>
+         <button type="submit" id="submitB">ENVIAR</button>
+         <button type="reset">APAGAR</button>
+      </form>
+   </main>
+   <script src="./script.js"></script>
+</body>
+
+</html>
