@@ -77,7 +77,9 @@
     display: flex;
     flex-direction: column;
     margin: 20px;
-    flex-basis: 350px;
+    flex-basis: 2 1 350px;
+    justify-content: center;
+
   }
   
   .aside-container h3, h4 {
