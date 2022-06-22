@@ -15,4 +15,20 @@
 
   console.log(newEmployees(newRegister));
 
-  
+  //   2-
+    const resultSort = (aposta, sorteio) => { 
+    const sorteado = Math.floor(Math.random() * (6 - 1) + 1);
+    return sorteio(sorteado, aposta);
+  };
+  const sorteio = (sorteado, escolhido) => {
+    if (sorteado === escolhido) {
+        return 'Parabéns você ganhou!';
+     } else {
+         return 'Tente novamente';
+     }
+}
+
+  console.log(resultSort(2, sorteio));
+
+//   3-
+
