@@ -31,4 +31,20 @@
   console.log(resultSort(2, sorteio));
 
 //   3-
+const gabarito = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const respostas = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
+const confereGabarito = (answers, student, callback) => {
+  const recebeNota = answers.reduce((acc,_,i) => (acc + callback(answers[i], student[i])), 1);
+  return `Resultado: ${recebeNota} pontos`;
+}
+
+ const comparaResp = (answers, student) => {
+  if (answers === student) return 1;
+  if (answers === 'N.A') {
+    return 0;
+  } return -0.5;
+  };
+
+
+console.log(confereGabarito(gabarito, respostas, comparaResp));
