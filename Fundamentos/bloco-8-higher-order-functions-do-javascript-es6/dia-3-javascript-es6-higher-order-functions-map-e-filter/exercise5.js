@@ -63,22 +63,13 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-//🚀 4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
-//Dica: use as funções filter e sort
+  //🚀 5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
 
-function oldBooksOrdered() {
+
+  function fantasyOrScienceFictionAuthors() {
     // escreva seu código aqui
- const oldBook = books.filter((book) => 2022 - book.releaseYear > 60).sort((a, b) => a.releaseYear - b.releaseYear);
- return oldBook
-  };
+ const generos = ['Fantasia', 'Ficção Científica'];
 
-  console.log(oldBooksOrdered())
-
-
-
-
-
-
-
-
-  
+ return books.filter((book) => generos.includes(book.genre)).map((book) => book.author.name).sort();
+}
+  console.log (fantasyOrScienceFictionAuthors())
